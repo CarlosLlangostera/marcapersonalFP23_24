@@ -2,6 +2,6 @@
 
 @section('content')
 
-    Pantalla principal de proyectos/create
+    Pantalla principal de edit
 
 @stop
