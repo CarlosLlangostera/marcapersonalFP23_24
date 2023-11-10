@@ -91,23 +91,3 @@ Route::get('/catalog/edit/{id}', function($id)
 {
     return view('catalog.edit', array('id' => $id));
 });
-
-Route::get('/proyectos', function()
-{
-    return view('proyectos.index');
-});
-
-Route::get('/proyectos/show/{id}', function($id)
-{
-    return view('proyectos.show', array('id'=>$id));
-});
-
-Route::get('/proyectos/create', function()
-{
-    return view('proyectos.create');
-});
-
-Route::get('/proyectos/edit/{id}', function($id)
-{
-    return view('proyectos.edit', array('id' => $id));
-});
