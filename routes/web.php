@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return "Pantalla principal";
  });
 
@@ -22,11 +23,38 @@ Route::get('/', function () {
     return "Login usuario";
  });
 
+=======
+    return view('home');
+});
+
+Route::get('login', function () {
+    return view('auth.login');
+});
+>>>>>>> a37923f6261534d63b0c2afbdec4b9b1c5a50a44
 
  Route::get('/logout', function () {
     return "Logout usuario";
  });
 
+<<<<<<< HEAD
+=======
+Route::prefix('catalog')->group(function () {
+    Route::get('/', function () {
+        return view('catalog.index');
+    });
+    Route::get('/show/{id}', function ($id) {
+        return view('catalog.show', array('id' => $id));
+    })->where('id', '[0-9]+');
+
+    Route::get('/create', function () {
+        return view('catalog.create');
+    });
+
+    Route::get('/edit/{id}', function ($id) {
+        return view('catalog.edit', array('id' => $id));
+    })->where('id', '[0-9]+');
+});
+>>>>>>> a37923f6261534d63b0c2afbdec4b9b1c5a50a44
 
  Route::get('/proyectos', function () {
     return "Listado proyectos";
@@ -56,6 +84,7 @@ Route::get('/', function () {
     } else {
         $salida = "Visualizar el currículo de " . $id;
     }
+<<<<<<< HEAD
     return $salida;
  })
     ->where('id', '[0-9]+');
@@ -91,3 +120,6 @@ Route::get('/catalog/edit/{id}', function($id)
 {
     return view('catalog.edit', array('id' => $id));
 });
+=======
+})->where('id', '[0-9]+');
+>>>>>>> a37923f6261534d63b0c2afbdec4b9b1c5a50a44

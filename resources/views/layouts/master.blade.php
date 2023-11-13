@@ -7,7 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> a37923f6261534d63b0c2afbdec4b9b1c5a50a44
     @include('partials.navbar')
 
     <div class="container">
